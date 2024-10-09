@@ -1,0 +1,99 @@
+DST=~/classes/comp122/assembly-programming/$PRACTICUM
+echo $DST
+cd ~/classes/comp122/assembly-programming/
+git init $PRACTICUM 
+cd $PRACTICUM 
+ls
+ls -a
+pushd ~/classes/comp122/deliverables/41-simple-interest-smf-steve/
+cp bin java java_tac mips makefile test_cases/ $DST
+cp -r bin java java_tac mips makefile test_cases/ $DST
+popd
+ls
+mkdir test_cases
+mv *.sth_case test_cases/
+alias ls
+subl .
+mv README test_cases/
+git branch java
+git status
+git -A .
+git add .
+git status
+git commit -m 'initial commit'
+history | tail -4
+pwd
+history
+touch foobar
+git add foobar
+git commit -m 'added foobar'
+git rm foobar
+git commit -m 'removed foobar'
+git log --oneline --graph
+git branch java
+git status
+git switch java
+touch java/up_down.j
+git commit -m 'created file'
+git add java/up_down.j
+git commit -m 'created file'
+java_subroutine java/up_down 5
+java_subroutine java/up_down 5
+java_subroutine java/up_down 5
+java_subroutine java/up_down 5
+java_subroutine -R null java/up_down 5
+git commit -m 'correct if-then-else' -a
+java_subroutine -R null java/up_down 5
+java_subroutine -R null java/up_down -5
+java_subroutine -R null java/up_down -5
+git commit -m 'working up loop'
+git commit -m 'working up loop' -a
+java_subroutine -R null java/up_down 4
+git commit -m 'completed java' -a
+git log --oneline --graph 
+git switch main
+git merge java
+git log --oneline --graph 
+git log --oneline --graph java main
+git log --oneline --graph -- java main
+git tag java_submitted
+git log --oneline --graph 
+cp java/up_down.j java_tac/
+git add java_tac/
+git commit -m 'initial java_tac'
+git branch java_tac
+git status
+git commit -m 'starting point' -a
+git switch java_tac
+history
+java_subroutine -R null java/up_down 4
+java_subroutine -R null java/up_down -7
+git commit -m 'working code' -a
+java_subroutine -R null java/up_down -7
+java_subroutine -R null java/up_down 4
+make validate_java_tac
+git switch main
+git merge --help
+git merge --no-ff  java_tac
+touch foobar
+git add foobar
+git commit -m 'foobar'
+git log --oneline --graph
+git switch java_tac
+git rm foobar
+touch foobar
+cat >foobar 
+git add foobar
+git commit -m 'foobar in java_tac'
+git switch main
+git log --oneline --graph -- main java_tac
+git log --oneline --graph -- main
+git log
+git log --oneline --graph main
+git log --oneline --graph main java_tac
+git log --oneline --graph main -- java_tac
+git log --oneline --graph main java_tac
+git log --oneline --graph java_tac
+git log --oneline --graph -- java_tac
+git log --oneline --graph -- java_tac..main
+history -w $PRACTICUM 
